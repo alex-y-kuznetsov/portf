@@ -1,24 +1,22 @@
 <template>
   <div class="home container">
     <div class="projects">
-      <article class="project_item"
-               v-for="project in projects"
-               v-bind:key ="project.id">
-        <h1 class="project_title">{{ project.name }}</h1>
-        <h2 class="project_subtitle">{{ project.subtitle }}</h2>
-        <div class="project_img"></div>
-        <div class="project_description"></div>
-      </article>
+      <Project
+        v-for="project in projects"
+        v-bind:key ="project.id"
+        v-bind:id="project.id" />
     </div>
   </div>
 </template>
 
 <script>
-import projects from '@/data/projects.js'
+import projects from '@/data/projects.js';
+import Project from '@/components/Project.vue';
 
 export default {
   name: 'Home',
   components: {
+    Project
   },
   data () {
     return {
