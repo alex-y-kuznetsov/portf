@@ -1,13 +1,16 @@
 <template>
   <div class="previews">
     <form v-on:change.prevent="updateShownProject">
-      <ul>
-        <li v-for="project in projects" v-bind:key="project.id">
+      <ul class="previews_list">
+        <li class="previews_list_item"
+            v-for="project in projects" v-bind:key="project.id">
           <input type="radio"
-                v-bind:id="'preview_' + project.id"
-                v-bind:value="project.id"
-                v-model="shownProject">
-          <label v-bind:for="'preview_' + project.id">{{ project.name }}</label>
+                 class="preview_radio"
+                 v-bind:id="'preview_' + project.id"
+                 v-bind:value="project.id"
+                 v-model="shownProject">
+          <label class="preview_label"
+                 v-bind:for="'preview_' + project.id">{{ project.name }}</label>
         </li>
       </ul>
     </form>

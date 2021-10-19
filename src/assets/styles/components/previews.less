@@ -1,0 +1,32 @@
+.previews {
+  width: 20%;
+}
+
+.previews_list {
+  margin: 0;
+  padding: 0;
+}
+
+.previews_list_item {
+  list-style: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.preview_radio {
+  display: none;
+}
+
+.preview_label {
+  display: block;
+  padding: 10px;
+  border: 1px solid @main_color;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @title_color;
+    color: @title_color;
+  }
+}
