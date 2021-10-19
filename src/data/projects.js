@@ -18,7 +18,7 @@ export default [
     img: '/img/project_previews/sleep_preview.jpg',
     prodUrl: 'https://alex-y-kuznetsov.github.io/sleep-build/',
     devUrl: 'https://github.com/alex-y-kuznetsov/sleep',
-    subtitle: 'An app to keep track how many nights my fiance fell asleep on the couch',
+    subtitle: 'An app to keep track how many times a month my fiancée falls asleep on the couch',
     features: [
       '',
       '',
