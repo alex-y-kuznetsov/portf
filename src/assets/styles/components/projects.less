@@ -19,3 +19,44 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.project_img {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 3px 3px @main_shadow_color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @background_color;
+    
+    .project_links {
+      display: flex;
+    }
+  }
+}
+
+.project_links {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: @background_color_opaque;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_link {
+  color: @main_color;
+  padding: 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  border: 1px solid @main_color;
+
+  &:hover {
+    border-color: @gold_color;
+    color: @gold_color;
+  }
+}
