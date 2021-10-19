@@ -1,5 +1,5 @@
 export default {
   name: 'Alexander Kuznetsov',
-  prefession: 'Front-end Developer',
+  profession: 'Front-end Developer',
   description: ''
 }
