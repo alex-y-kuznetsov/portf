@@ -3,11 +3,28 @@
 }
 
 .profile_name {
-  font-size: 34px;
-  line-height: 38px;
+  font-size: 56px;
+  line-height: 60px;
+  color: @title_color;
+  margin-bottom: 0;
 }
 
 .profile_profession {
   font-size: 26px;
   line-height: 30px;
+}
+
+.profile_link {
+  color: @main_color;
+  text-decoration: none;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid @main_color;
+  }
+
+  &:hover {
+    color: @title_color;
+  }
 }
