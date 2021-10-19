@@ -11,6 +11,7 @@
 import projects from '@/data/projects.js';
 
 export default {
+  name: 'Project',
   props: {
     id: {
       type: Number

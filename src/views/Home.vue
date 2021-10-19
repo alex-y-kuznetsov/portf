@@ -1,21 +1,24 @@
 <template>
   <div class="home container">
-    <div class="projects">
+    <Profile />
+    <section class="projects">
       <Project
         v-for="project in projects"
         v-bind:key ="project.id"
         v-bind:id="project.id" />
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
 import projects from '@/data/projects.js';
+import Profile from '@/components/Profile.vue';
 import Project from '@/components/Project.vue';
 
 export default {
   name: 'Home',
   components: {
+    Profile,
     Project
   },
   data () {
