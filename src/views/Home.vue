@@ -2,29 +2,35 @@
   <div class="home container">
     <Profile />
     <section class="projects">
-      <Project
-        v-for="project in projects"
-        v-bind:key ="project.id"
-        v-bind:id="project.id" />
+      <Previews />
+      <Project v-bind:id="shownProject" />
     </section>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 import projects from '@/data/projects.js';
 import Profile from '@/components/Profile.vue';
+import Previews from '@/components/Previews.vue';
 import Project from '@/components/Project.vue';
 
 export default {
   name: 'Home',
   components: {
     Profile,
+    Previews,
     Project
   },
   data () {
     return {
       projects
     }
+  },
+  computed: {
+    ...mapState([
+      'shownProject'
+    ])
   }
 }
 </script>

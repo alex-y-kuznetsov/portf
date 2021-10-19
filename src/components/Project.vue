@@ -26,13 +26,12 @@ export default {
   },
   data () {
     return {
-      constants,
-      projectId: this.id
+      constants
     }
   },
   computed: {
     currentProject () {
-      return projects.find(project => project.id === this.projectId);
+      return projects.find(project => project.id === this.id);
     }
   }
 }

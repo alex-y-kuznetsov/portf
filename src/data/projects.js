@@ -11,5 +11,18 @@ export default [
       '',
       ''
     ]
+  },
+  {
+    id: 2,
+    name: 'Sleep',
+    img: '/img/project_previews/sleep_preview.jpg',
+    prodUrl: 'https://alex-y-kuznetsov.github.io/sleep-build/',
+    devUrl: 'https://github.com/alex-y-kuznetsov/sleep',
+    subtitle: 'An app to keep track how many nights my fiance fell asleep on the couch',
+    features: [
+      '',
+      '',
+      ''
+    ]
   }
 ]
