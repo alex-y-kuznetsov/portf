@@ -5,9 +5,10 @@
 }
 
 .project_item {
-  width: 50%;
+  width: 60%;
   border: 1px solid @main_color;
   padding: 10px;
+  min-width: fit-content;
 }
 
 .project_title {
@@ -20,32 +21,33 @@
   line-height: 20px;
 }
 
-.project_img {
+.project_img_container {
   width: 100%;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 3px 3px @main_shadow_color;
-  cursor: pointer;
+  display: flex;
+}
 
-  &:hover {
-    background-color: @background_color;
-    
-    .project_links {
-      display: flex;
-    }
+.project_img {
+  width: 180px;
+  height: 180px;
+  border: 1px solid @main_color;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
   }
 }
 
+.project_description {
+  margin: 20px 0;
+}
+
+.project_features {
+  padding-left: 20px;
+  margin: 0;
+}
+
 .project_links {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: @background_color_opaque;
-  flex-direction: column;
+  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .project_link {
@@ -55,6 +57,10 @@
   text-decoration: none;
   border: 2px solid @main_color;
   font-weight: bold;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
 
   &:hover {
     border-color: @title_color;
