@@ -49,5 +49,37 @@ export default [
       'Vue store and routing implementation',
       'Mobile and desktop versions'
     ]
+  },
+  {
+    id: 3,
+    name: 'Note',
+    prodUrl: 'https://alex-y-kuznetsov.github.io/note-build/',
+    devUrl: 'https://github.com/alex-y-kuznetsov/note',
+    subtitle: 'A mandatory note app',
+    images: [
+      {
+        url: '/img/project_previews/note/note_preview_1.jpg',
+        description: 'Controls panel'
+      },
+      {
+        url: '/img/project_previews/note/note_preview_2.jpg',
+        description: 'Tiles view'
+      },
+      {
+        url: '/img/project_previews/note/note_preview_3.jpg',
+        description: 'List view'
+      },
+      {
+        url: '/img/project_previews/note/note_preview_4.jpg',
+        description: 'Stats'
+      }
+    ],
+    features: [
+      'Notes are stored in local storage and persist through page reload',
+      'Filtering functionality: showing favorite/marked notes or both',
+      'Total note stats',
+      'Vue store and routing implementation',
+      'Mobile and desktop versions'
+    ]
   }
 ]
