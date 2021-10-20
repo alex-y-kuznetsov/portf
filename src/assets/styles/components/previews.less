@@ -17,6 +17,19 @@
 
 .preview_radio {
   display: none;
+
+  &:checked {
+    & + .preview_label {
+      padding-left: 40px;
+      transition: padding-left 0.2s;
+
+      &::before,
+      &::after {
+        opacity: 1;
+        transition: opacity 0.2s;
+      }
+    }
+  }
 }
 
 .preview_label {
@@ -24,6 +37,34 @@
   padding: 10px;
   border: 1px solid @main_color;
   cursor: pointer;
+  transition: padding-left 0.2s;
+  position: relative;
+
+  &::before,
+  &::after {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.2s;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+    background-color: @main_color;
+  }
+
+  &::after {
+    width: 10px;
+    height: 10px;
+    left: 14px;
+    background-color: @background_color;
+  }
 
   &:hover {
     border-color: @title_color;
