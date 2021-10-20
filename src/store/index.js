@@ -5,10 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    shownProject: 1
+    shownProject: 1,
+    isAnimatingProject: false
   },
   mutations: {
     setShownProject (state, value) {
+      state.isAnimatingProject = true;
+      setTimeout(function () {
+        state.isAnimatingProject = false;
+      }, 100)
       state.shownProject = value;
     }
   },
