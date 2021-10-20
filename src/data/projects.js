@@ -6,9 +6,18 @@ export default [
     devUrl: 'https://github.com/alex-y-kuznetsov/clash',
     subtitle: 'A simple fighting app in a fantasy world',
     images: [
-      '/img/project_previews/clash/clash_preview_1.jpg',
-      '/img/project_previews/clash/clash_preview_2.jpg',
-      '/img/project_previews/clash/clash_preview_3.jpg'
+      {
+        url: '/img/project_previews/clash/clash_preview_1.jpg',
+        description: 'Start screen'
+      },
+      {
+        url: '/img/project_previews/clash/clash_preview_2.jpg',
+        description: 'Character selection'
+      },
+      {
+        url: '/img/project_previews/clash/clash_preview_3.jpg',
+        description: 'Fight zone'
+      }
     ],
     features: [
       'Vue store interaction between components',
@@ -24,8 +33,14 @@ export default [
     devUrl: 'https://github.com/alex-y-kuznetsov/sleep',
     subtitle: 'An app to keep track how many times a month my fiancée falls asleep on the couch',
     images: [
-      '/img/project_previews/sleep/sleep_preview_1.jpg',
-      '/img/project_previews/sleep/sleep_preview_2.jpg'
+      {
+        url: '/img/project_previews/sleep/sleep_preview_1.jpg',
+        description: 'Controls panel'
+      },
+      {
+        url: '/img/project_previews/sleep/sleep_preview_2.jpg',
+        description: 'Additional visualization'
+      }
     ],
     features: [
       'Selection stored in local storage and persists through page reload',

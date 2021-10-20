@@ -3,10 +3,14 @@
     <h1 class="project_title">{{ currentProject.name }}</h1>
     <h2 class="project_subtitle">{{ currentProject.subtitle }}</h2>
     <div class="project_img_container">
-      <img class="project_img"
+      <div class="project_img_cover"
            v-for="(projectImage, index) in currentProject.images"
-           v-bind:key="index"
-           v-bind:src="projectImage" />
+           v-bind:key="index">
+        <img class="project_img" v-bind:src="projectImage.url" />
+        <div class="project_img_description">
+          <span>{{ projectImage.description }}</span>
+        </div>
+      </div>
     </div>
     <div class="project_description">
       <span class="project_description_subline">Features:</span>
