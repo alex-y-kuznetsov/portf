@@ -13,7 +13,7 @@ export default new Vuex.Store({
       state.isAnimatingProject = true;
       setTimeout(function () {
         state.isAnimatingProject = false;
-      }, 100)
+      }, 200)
       state.shownProject = value;
     }
   },
