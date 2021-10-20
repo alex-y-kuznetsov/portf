@@ -5,9 +5,6 @@
       <Previews />
       <Project v-bind:id="shownProject" />
     </section>
-    <section class="additional">
-      <a href="#" class="download_resume">download my resume</a>
-    </section>
   </div>
 </template>
 

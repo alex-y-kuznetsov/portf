@@ -13,7 +13,7 @@ export default [
     features: [
       'Vue store interaction between components',
       'Character stats are affected by items',
-      'Transition between pages Vue via routing',
+      'Transition between pages via Vue routing',
       'Desktop and mobile versions'
     ]
   },
@@ -25,13 +25,14 @@ export default [
     subtitle: 'An app to keep track how many times a month my fiancée falls asleep on the couch',
     images: [
       '/img/project_previews/sleep/sleep_preview_1.jpg',
-      '/img/project_previews/sleep/sleep_preview_2.jpg',
-      '/img/project_previews/sleep/sleep_preview_3.jpg'
+      '/img/project_previews/sleep/sleep_preview_2.jpg'
     ],
     features: [
-      '',
-      '',
-      ''
+      'Selection stored in local storage and persists through page reload',
+      'Data cleared at the beggining of a new month',
+      'Timeline and percentage bar views with titles',
+      'Vue store and routing implementation',
+      'Mobile and desktop versions'
     ]
   }
 ]
