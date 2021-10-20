@@ -4,7 +4,7 @@ export default [
     name: 'Clash',
     prodUrl: 'https://alex-y-kuznetsov.github.io/clash-build/',
     devUrl: 'https://github.com/alex-y-kuznetsov/clash',
-    subtitle: 'A simple fighting app in a fantasy world',
+    subtitle: 'A simple fighting game in a fantasy world',
     images: [
       {
         url: '/img/project_previews/clash/clash_preview_1.jpg',

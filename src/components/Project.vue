@@ -13,13 +13,14 @@
       </div>
     </div>
     <div class="project_description">
-      <span class="project_description_subline">Features:</span>
+      <span class="project_subline">Features:</span>
       <ul class="project_features">
         <li class="project_features_item"
             v-for="(projectFeature, index) in currentProject.features"
             v-bind:key="index">{{ projectFeature }}</li>
       </ul>
     </div>
+    <span class="project_subline">Links:</span>
     <div class="project_links">
       <a class="project_link" target="_blank" v-bind:href="currentProject.prodUrl">Production</a>
       <a class="project_link" target="_blank" v-bind:href="currentProject.devUrl">Repository</a>
