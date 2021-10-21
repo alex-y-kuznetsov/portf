@@ -2,8 +2,15 @@
   <div class="home container">
     <Profile />
     <section class="projects">
-      <Previews />
-      <Project v-bind:id="shownProject" />
+      <div class="projects_controls" v-if="!isProjectsBlockShown">
+        <button class="btn" v-on:click.prevent="toggleProjectsBlock">View Projects</button>
+      </div>
+      <transition name="fade">
+        <div class="projects_shown" v-if="isProjectsBlockShown">
+          <Previews />
+          <Project v-bind:id="shownProject" />
+        </div>
+      </transition>
     </section>
   </div>
 </template>
@@ -27,9 +34,15 @@ export default {
       projects
     }
   },
+  methods: {
+    toggleProjectsBlock () {
+      this.$store.commit('toggleProjectsBlock');
+    }
+  },
   computed: {
     ...mapState([
-      'shownProject'
+      'shownProject',
+      'isProjectsBlockShown'
     ])
   }
 }

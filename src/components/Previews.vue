@@ -9,7 +9,7 @@
                  v-bind:id="'preview_' + project.id"
                  v-bind:value="project.id"
                  v-model="shownProject">
-          <label class="preview_label"
+          <label class="btn preview_label"
                  v-bind:for="'preview_' + project.id">{{ project.name }}</label>
         </li>
       </ul>

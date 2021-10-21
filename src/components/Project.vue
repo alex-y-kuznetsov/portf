@@ -23,8 +23,8 @@
       </div>
       <span class="project_subline">Links:</span>
       <div class="project_links">
-        <a class="project_link" target="_blank" v-bind:href="currentProject.prodUrl">Production</a>
-        <a class="project_link" target="_blank" v-bind:href="currentProject.devUrl">Repository</a>
+        <a class="btn project_link" target="_blank" v-bind:href="currentProject.prodUrl">Production</a>
+        <a class="btn project_link" target="_blank" v-bind:href="currentProject.devUrl">Repository</a>
       </div>
     </article>
   </transition>

@@ -7,6 +7,7 @@
     </div>
     <h1 class="profile_name">{{ profile.name }}</h1>
     <h2 class="profile_profession">{{ profile.profession }}</h2>
+    <p class="profile_description">{{ profile.description }}</p>
   </section>
 </template>
 

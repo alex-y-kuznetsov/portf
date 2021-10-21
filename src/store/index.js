@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     shownProject: 1,
-    isAnimatingProject: false
+    isAnimatingProject: false,
+    isProjectsBlockShown: false
   },
   mutations: {
     setShownProject (state, value) {
@@ -15,6 +16,9 @@ export default new Vuex.Store({
         state.isAnimatingProject = false;
       }, 200)
       state.shownProject = value;
+    },
+    toggleProjectsBlock (state) {
+      state.isProjectsBlockShown = !state.isProjectsBlockShown;
     }
   },
   actions: {
