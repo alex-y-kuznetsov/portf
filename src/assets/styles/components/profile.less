@@ -32,3 +32,35 @@
     color: @title_color;
   }
 }
+
+@media (max-width: @mobile_width) {
+  .profile {
+    padding-block: 30px;
+  }
+
+  .profile_link {
+    &:not(:last-of-type) {
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .profile_link_additional {
+    display: none;
+  }
+
+  .profile_name {
+    margin-top: 20px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .profile_profession {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .profile_description {
+    max-width: 100%;
+  }
+}

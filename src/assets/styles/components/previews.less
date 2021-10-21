@@ -63,3 +63,18 @@
     background-color: @background_color;
   }
 }
+
+@media (max-width: @mobile_width) {
+  .previews {
+    width: 100%;
+  }
+
+  .previews_list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .previews_list_item {
+    flex: 1 1 0;
+  }
+}

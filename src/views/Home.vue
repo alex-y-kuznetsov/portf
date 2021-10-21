@@ -3,7 +3,7 @@
     <Profile />
     <section class="projects">
       <div class="projects_controls" v-if="!isProjectsBlockShown">
-        <button class="btn" v-on:click.prevent="toggleProjectsBlock">View Projects</button>
+        <button class="btn projects_show_btn" v-on:click.prevent="toggleProjectsBlock">View Projects</button>
       </div>
       <transition name="fade">
         <div class="projects_shown" v-if="isProjectsBlockShown">
