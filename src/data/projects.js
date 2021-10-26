@@ -81,5 +81,37 @@ export default [
       'Vue store and routing implementation',
       'Mobile and desktop versions'
     ]
+  },
+  {
+    id: 4,
+    name: 'Pink',
+    prodUrl: 'https://alex-y-kuznetsov.github.io/Pink/',
+    devUrl: 'https://github.com/alex-y-kuznetsov/Pink',
+    subtitle: 'A plain HTML/CSS page for a mobile image app',
+    images: [
+      {
+        url: '/img/project_previews/pink/pink_preview_1.jpg',
+        description: 'Main Page'
+      },
+      {
+        url: '/img/project_previews/pink/pink_preview_2.jpg',
+        description: 'Interactive map'
+      },
+      {
+        url: '/img/project_previews/pink/pink_preview_3.jpg',
+        description: 'Stylized form elements'
+      },
+      {
+        url: '/img/project_previews/pink/pink_preview_4.jpg',
+        description: 'Mobile menu'
+      }
+    ],
+    features: [
+      'Three media breakpoints: mobile, tablet and desktop',
+      'Made with retina resolution in mind',
+      'Mobile-first approach',
+      'Includes svg sprite',
+      'BEM class naming implemented for CSS'
+    ]
   }
 ]
