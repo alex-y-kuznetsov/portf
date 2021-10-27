@@ -5,11 +5,7 @@
         <span class="profile_link_additional">email me: </span>
         {{ profile.contacts.email }}
       </a>
-      <a class="profile_link" v-bind:href="'tel:' + profile.contacts.phone">
-        <span class="profile_link_additional">call me: </span>
-        +{{ profile.contacts.phone }}
-      </a>
-      <a class="profile_link" href="#">
+      <a class="profile_link" v-bind:href="constants.PROJ_PATH + '/files/resume-alexander-kuznetsov.pdf'" download>
         <span class="profile_link_additional">download my </span>
         resume
       </a>
@@ -21,11 +17,13 @@
 </template>
 
 <script>
+import constants from '@/data/constants.js';
 import profile from '@/data/profile.js';
 
 export default {
   data () {
     return {
+      constants,
       profile
     }
   }

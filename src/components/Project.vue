@@ -14,7 +14,7 @@
         <div class="project_img_cover"
             v-for="(projectImage, index) in currentProject.images"
             v-bind:key="index">
-          <img class="project_img" v-bind:src="projectImage.url" />
+          <img class="project_img" v-bind:src="constants.PROJ_PATH + projectImage.url" />
           <div class="project_img_description">
             <span>{{ projectImage.description }}</span>
           </div>
