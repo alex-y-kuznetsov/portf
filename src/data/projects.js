@@ -24,6 +24,13 @@ export default [
       'Character stats are affected by items',
       'Transition between pages via Vue routing',
       'Desktop and mobile versions'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'Less',
+      'JavaScript',
+      'Vue'
     ]
   },
   {
@@ -48,6 +55,13 @@ export default [
       'Timeline and percentage bar views with titles',
       'Vue store and routing implementation',
       'Mobile and desktop versions'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'Less',
+      'JavaScript',
+      'Vue'
     ]
   },
   {
@@ -80,6 +94,13 @@ export default [
       'Total note stats',
       'Vue store and routing implementation',
       'Mobile and desktop versions'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'Less',
+      'JavaScript',
+      'Vue'
     ]
   },
   {
@@ -112,6 +133,13 @@ export default [
       'Mobile-first approach',
       'Includes svg sprite',
       'BEM class naming implemented for CSS'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'Less',
+      'JavaScript',
+      'Gulp'
     ]
   }
 ]

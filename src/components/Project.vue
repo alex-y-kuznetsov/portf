@@ -1,7 +1,14 @@
 <template>
   <transition name="fade">
     <article class="project_item" v-if="!isAnimatingProject">
-      <h1 class="project_title">{{ currentProject.name }}</h1>
+      <div class="project_header">
+        <h1 class="project_title">{{ currentProject.name }}</h1>
+        <div class="project_tech">
+          <span class="project_tech_item"
+                v-for="(tech, index) in currentProject.tech"
+                v-bind:key="index">{{ tech }}</span>
+        </div>
+      </div>
       <h2 class="project_subtitle">{{ currentProject.subtitle }}</h2>
       <div class="project_img_container">
         <div class="project_img_cover"
