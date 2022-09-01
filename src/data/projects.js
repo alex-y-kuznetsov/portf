@@ -1,6 +1,78 @@
 export default [
   {
     id: 1,
+    name: 'Superbanking',
+    prodUrl: 'https://superbanking.ru',
+    subtitle: 'A promotional page for an online payment service',
+    images: [
+      {
+        url: '/img/project_previews/superbanking/superbanking_preview_1.jpg',
+        description: 'Home page and menu'
+      },
+      {
+        url: '/img/project_previews/superbanking/superbanking_preview_2.jpg',
+        description: 'Side scrolling features'
+      },
+      {
+        url: '/img/project_previews/superbanking/superbanking_preview_3.jpg',
+        description: 'Parallax scrolling images'
+      },
+      {
+        url: '/img/project_previews/superbanking/superbanking_preview_4.jpg',
+        description: 'Adaptive tile sections'
+      }
+    ],
+    features: [
+      'Nuxt JS used for better search',
+      'Animations used for transitions between pages',
+      'Backend interaction via REST API',
+      'Transition between pages via Vue routing',
+      'Desktop and mobile versions with mobile first approach'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'SCSS',
+      'JavaScript',
+      'Nuxt'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Super Place',
+    prodUrl: 'https://superplace.ru',
+    subtitle: 'A marketplace interface for small businesses',
+    images: [
+      {
+        url: '/img/project_previews/superplace/superplace_preview_1.jpg',
+        description: 'Home page'
+      },
+      {
+        url: '/img/project_previews/superplace/superplace_preview_2.jpg',
+        description: 'Catalog'
+      },
+      {
+        url: '/img/project_previews/superplace/superplace_preview_3.jpg',
+        description: 'Product card'
+      }
+    ],
+    features: [
+      'Vue 3 used',
+      'Product search and filtering via REST API',
+      'Several search parameters can be applied at the same time',
+      'Carousel gallery in product card',
+      'Desktop and mobile versions'
+    ],
+    tech: [
+      'HTML',
+      'CSS',
+      'SCSS',
+      'JavaScript',
+      'Vue'
+    ]
+  },
+  {
+    id: 3,
     name: 'Clash',
     prodUrl: 'https://alex-y-kuznetsov.github.io/clash-build/',
     devUrl: 'https://github.com/alex-y-kuznetsov/clash',
@@ -22,6 +94,7 @@ export default [
     features: [
       'Vue store interaction between components',
       'Character stats are affected by items',
+      'Stamina and health mechanics',
       'Transition between pages via Vue routing',
       'Desktop and mobile versions'
     ],
@@ -34,11 +107,11 @@ export default [
     ]
   },
   {
-    id: 2,
+    id: 4,
     name: 'Sleep',
     prodUrl: 'https://alex-y-kuznetsov.github.io/sleep-build/',
     devUrl: 'https://github.com/alex-y-kuznetsov/sleep',
-    subtitle: 'An app to track how many times a month my fiancée falls asleep on the couch',
+    subtitle: 'An app to track how many times a month my wife falls asleep on the couch',
     images: [
       {
         url: '/img/project_previews/sleep/sleep_preview_1.jpg',
@@ -65,7 +138,7 @@ export default [
     ]
   },
   {
-    id: 3,
+    id: 5,
     name: 'Note',
     prodUrl: 'https://alex-y-kuznetsov.github.io/note-build/',
     devUrl: 'https://github.com/alex-y-kuznetsov/note',
@@ -104,7 +177,7 @@ export default [
     ]
   },
   {
-    id: 4,
+    id: 6,
     name: 'Pink',
     prodUrl: 'https://alex-y-kuznetsov.github.io/Pink/',
     devUrl: 'https://github.com/alex-y-kuznetsov/Pink',

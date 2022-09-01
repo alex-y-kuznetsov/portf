@@ -30,8 +30,14 @@
       </div>
       <span class="project_subline">Links:</span>
       <div class="project_links">
-        <a class="btn project_link" target="_blank" v-bind:href="currentProject.prodUrl">Production</a>
-        <a class="btn project_link" target="_blank" v-bind:href="currentProject.devUrl">Repository</a>
+        <a v-if="currentProject.prodUrl"
+           class="btn project_link"
+           target="_blank"
+           v-bind:href="currentProject.prodUrl">Production</a>
+        <a v-if="currentProject.devUrl"
+           class="btn project_link"
+           target="_blank"
+           v-bind:href="currentProject.devUrl">Repository</a>
       </div>
     </article>
   </transition>
