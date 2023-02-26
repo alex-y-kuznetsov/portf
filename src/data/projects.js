@@ -178,41 +178,41 @@ export default [
   },
   {
     id: 6,
-    name: 'Pink',
-    prodUrl: 'https://alex-y-kuznetsov.github.io/Pink/',
-    devUrl: 'https://github.com/alex-y-kuznetsov/Pink',
-    subtitle: 'A plain HTML/CSS page for a mobile image app',
+    name: 'Swapp',
+    prodUrl: 'https://alex-y-kuznetsov.github.io/the-swapp/',
+    devUrl: 'https://github.com/alex-y-kuznetsov/swapp',
+    subtitle: 'An app to track your M:tG Commander card swap ideas',
     images: [
       {
-        url: '/img/project_previews/pink/pink_preview_1.jpg',
-        description: 'Main Page'
+        url: '/img/project_previews/swapp/swapp_preview_1.jpg',
+        description: 'Main table'
       },
       {
-        url: '/img/project_previews/pink/pink_preview_2.jpg',
-        description: 'Interactive map'
+        url: '/img/project_previews/swapp/swapp_preview_2.jpg',
+        description: 'Item controls'
       },
       {
-        url: '/img/project_previews/pink/pink_preview_3.jpg',
-        description: 'Stylized form elements'
+        url: '/img/project_previews/swapp/swapp_preview_3.jpg',
+        description: 'Pop-up with create/edit'
       },
       {
-        url: '/img/project_previews/pink/pink_preview_4.jpg',
-        description: 'Mobile menu'
+        url: '/img/project_previews/swapp/swapp_preview_4.jpg',
+        description: 'Mobile version'
       }
     ],
     features: [
-      'Three media breakpoints: mobile, tablet and desktop',
-      'Made with retina resolution in mind',
-      'Mobile-first approach',
-      'Includes svg sprite',
-      'BEM class naming implemented for CSS'
+      'Vue 3 used with store and router implementation',
+      'Scryfall API integrated for card search',
+      'Card names stored in local storage for less request frequency',
+      'Swap items stored in local storage for easy edit',
+      'Mobile and desktop versions'
     ],
     tech: [
       'HTML',
       'CSS',
       'Less',
       'JavaScript',
-      'Gulp'
+      'Vue 3'
     ]
   }
 ]
